@@ -6,18 +6,18 @@ Twitter: http://twitter.com/keyvan
 Contact Info: http://keyvan.tel
 ****************************************************************************
 CrunchTime is a Reverse Polish Notation (RPN) calculator for the
- iOS platform (primarily designed for iPhone and iPod Touch)
- developed by a group of four graduate students as an educational
- project for graduate software engineering course at the computer
- science department of The University of Texas at San Antonio
- in Spring 2010.
+iOS platform (primarily designed for iPhone and iPod Touch)
+developed by a group of four graduate students as an educational
+project for graduate software engineering course at the computer
+science department of The University of Texas at San Antonio
+in Spring 2010.
 
 Note that this source code is provided as is with no guarantees,
- and developers take no responsibility for it, and no additional
- support or documentation will be provided for this project.
+and developers take no responsibility for it, and no additional
+support or documentation will be provided for this project.
 
 The main purpose of publishing this code is to provide a good
- case study for learning iPhone development.
+case study for learning iPhone development.
 
 The implementaiton is described in details on my blog:
 
