@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* CrunchTimeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* CrunchTimeAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		2A2902651173FAA000D03046 /* CrunchTimeInnerException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2902621173FAA000D03046 /* CrunchTimeInnerException.m */; };
+		2A2902661173FAA000D03046 /* CrunchTimeUserException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2902641173FAA000D03046 /* CrunchTimeUserException.m */; };
+		2A2902811173FB7300D03046 /* InsufficientNumberOfOperandsException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2902801173FB7300D03046 /* InsufficientNumberOfOperandsException.m */; };
+		2A352212114EAF08001382B8 /* ComputationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A352211114EAF08001382B8 /* ComputationEngine.m */; };
+		2A352216114EAF2D001382B8 /* CrunchTimeException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A352215114EAF2D001382B8 /* CrunchTimeException.m */; };
+		2A35221B114EB307001382B8 /* StackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A35221A114EB307001382B8 /* StackManager.m */; };
+		2A5C9028117C947A0076C392 /* DivideByZeroException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C9027117C947A0076C392 /* DivideByZeroException.m */; };
+		2A5C904E117C97A60076C392 /* NegativeOperandForLogException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C904D117C97A60076C392 /* NegativeOperandForLogException.m */; };
+		2A5C9089117C9DE50076C392 /* NegativeOperandForRadicalException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C9088117C9DE50076C392 /* NegativeOperandForRadicalException.m */; };
+		2AF8B196115C3F600075EF3E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8B195115C3F600075EF3E /* Constants.m */; };
+		3D669D701184A9C900573C86 /* UnexpectedUserInputException.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D669D6F1184A9C900573C86 /* UnexpectedUserInputException.m */; };
+		3D6AAB531148774D00F56994 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6AAB521148774D00F56994 /* MainView.m */; };
+		3DF66931114EB5280062692F /* InputProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF66930114EB5280062692F /* InputProcessor.m */; };
+		77039BFA1176979B00F72EEA /* ConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77039BF91176979B00F72EEA /* ConfigurationManager.m */; };
+		77039BFD117697A600F72EEA /* MemoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77039BFC117697A600F72EEA /* MemoryManager.m */; };
+		77039C0D117697C900F72EEA /* CrunchTimeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 77039C0C117697C900F72EEA /* CrunchTimeNumber.m */; };
+		776C4C871183C321005C93F3 /* MemoryAccessException.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C4C801183C321005C93F3 /* MemoryAccessException.m */; };
+		776C4C881183C321005C93F3 /* StackAccessException.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C4C821183C321005C93F3 /* StackAccessException.m */; };
+		776C4C891183C321005C93F3 /* StackEmptyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C4C841183C321005C93F3 /* StackEmptyException.m */; };
+		776C4C8A1183C321005C93F3 /* StackFullException.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C4C861183C321005C93F3 /* StackFullException.m */; };
+		B7A022861153E01B00D21AA8 /* CalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A022841153E01B00D21AA8 /* CalculatorView.m */; };
+		B7A022871153E01B00D21AA8 /* CalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A022851153E01B00D21AA8 /* CalculatorView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* CrunchTimeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchTimeAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* CrunchTimeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchTimeAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* CrunchTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrunchTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A2902611173FAA000D03046 /* CrunchTimeInnerException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchTimeInnerException.h; sourceTree = "<group>"; };
+		2A2902621173FAA000D03046 /* CrunchTimeInnerException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchTimeInnerException.m; sourceTree = "<group>"; };
+		2A2902631173FAA000D03046 /* CrunchTimeUserException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchTimeUserException.h; sourceTree = "<group>"; };
+		2A2902641173FAA000D03046 /* CrunchTimeUserException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchTimeUserException.m; sourceTree = "<group>"; };
+		2A29027F1173FB7300D03046 /* InsufficientNumberOfOperandsException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsufficientNumberOfOperandsException.h; sourceTree = "<group>"; };
+		2A2902801173FB7300D03046 /* InsufficientNumberOfOperandsException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsufficientNumberOfOperandsException.m; sourceTree = "<group>"; };
+		2A352210114EAF08001382B8 /* ComputationEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputationEngine.h; sourceTree = "<group>"; };
+		2A352211114EAF08001382B8 /* ComputationEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputationEngine.m; sourceTree = "<group>"; };
+		2A352214114EAF2D001382B8 /* CrunchTimeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchTimeException.h; sourceTree = "<group>"; };
+		2A352215114EAF2D001382B8 /* CrunchTimeException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchTimeException.m; sourceTree = "<group>"; };
+		2A352219114EB307001382B8 /* StackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackManager.h; sourceTree = "<group>"; };
+		2A35221A114EB307001382B8 /* StackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackManager.m; sourceTree = "<group>"; };
+		2A5C9026117C947A0076C392 /* DivideByZeroException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DivideByZeroException.h; sourceTree = "<group>"; };
+		2A5C9027117C947A0076C392 /* DivideByZeroException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivideByZeroException.m; sourceTree = "<group>"; };
+		2A5C904C117C97A60076C392 /* NegativeOperandForLogException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NegativeOperandForLogException.h; sourceTree = "<group>"; };
+		2A5C904D117C97A60076C392 /* NegativeOperandForLogException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NegativeOperandForLogException.m; sourceTree = "<group>"; };
+		2A5C9087117C9DE50076C392 /* NegativeOperandForRadicalException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NegativeOperandForRadicalException.h; sourceTree = "<group>"; };
+		2A5C9088117C9DE50076C392 /* NegativeOperandForRadicalException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NegativeOperandForRadicalException.m; sourceTree = "<group>"; };
+		2AF8B194115C3F580075EF3E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2AF8B195115C3F600075EF3E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* CrunchTime_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchTime_Prefix.pch; sourceTree = "<group>"; };
+		3D669D6E1184A9C900573C86 /* UnexpectedUserInputException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnexpectedUserInputException.h; sourceTree = "<group>"; };
+		3D669D6F1184A9C900573C86 /* UnexpectedUserInputException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnexpectedUserInputException.m; sourceTree = "<group>"; };
+		3D6AAB511148774D00F56994 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		3D6AAB521148774D00F56994 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		3DF6692F114EB5280062692F /* InputProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputProcessor.h; sourceTree = "<group>"; };
+		3DF66930114EB5280062692F /* InputProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputProcessor.m; sourceTree = "<group>"; };
+		77039BF81176979B00F72EEA /* ConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationManager.h; sourceTree = "<group>"; };
+		77039BF91176979B00F72EEA /* ConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigurationManager.m; sourceTree = "<group>"; };
+		77039BFB117697A600F72EEA /* MemoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManager.h; sourceTree = "<group>"; };
+		77039BFC117697A600F72EEA /* MemoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManager.m; sourceTree = "<group>"; };
+		77039C0B117697C900F72EEA /* CrunchTimeNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchTimeNumber.h; sourceTree = "<group>"; };
+		77039C0C117697C900F72EEA /* CrunchTimeNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchTimeNumber.m; sourceTree = "<group>"; };
+		776C4C7F1183C321005C93F3 /* MemoryAccessException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryAccessException.h; sourceTree = "<group>"; };
+		776C4C801183C321005C93F3 /* MemoryAccessException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryAccessException.m; sourceTree = "<group>"; };
+		776C4C811183C321005C93F3 /* StackAccessException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackAccessException.h; sourceTree = "<group>"; };
+		776C4C821183C321005C93F3 /* StackAccessException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackAccessException.m; sourceTree = "<group>"; };
+		776C4C831183C321005C93F3 /* StackEmptyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackEmptyException.h; sourceTree = "<group>"; };
+		776C4C841183C321005C93F3 /* StackEmptyException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackEmptyException.m; sourceTree = "<group>"; };
+		776C4C851183C321005C93F3 /* StackFullException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackFullException.h; sourceTree = "<group>"; };
+		776C4C861183C321005C93F3 /* StackFullException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackFullException.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* CrunchTime-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CrunchTime-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B7A022831153E01B00D21AA8 /* CalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorView.h; sourceTree = "<group>"; };
+		B7A022841153E01B00D21AA8 /* CalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorView.m; sourceTree = "<group>"; };
+		B7A022851153E01B00D21AA8 /* CalculatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				77039BFE117697AE00F72EEA /* Number */,
+				77039BF71176978900F72EEA /* Configuration */,
+				77039BF61176978200F72EEA /* Memory */,
+				2AF8B195115C3F600075EF3E /* Constants.m */,
+				2AF8B194115C3F580075EF3E /* Constants.h */,
+				3DF6692D114EB4A70062692F /* InputResponse */,
+				2A352213114EAF15001382B8 /* Core */,
+				3D6AAB4E1148766900F56994 /* Engine */,
+				3D6AAB4B1148766000F56994 /* Stack */,
+				1D3623240D0F684500981E51 /* CrunchTimeAppDelegate.h */,
+				1D3623250D0F684500981E51 /* CrunchTimeAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* CrunchTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				3D6AAB511148774D00F56994 /* MainView.h */,
+				3D6AAB521148774D00F56994 /* MainView.m */,
+				B7A022831153E01B00D21AA8 /* CalculatorView.h */,
+				B7A022841153E01B00D21AA8 /* CalculatorView.m */,
+				B7A022851153E01B00D21AA8 /* CalculatorView.xib */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* CrunchTime_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* CrunchTime-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A2902821173FB7700D03046 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				3D669D6E1184A9C900573C86 /* UnexpectedUserInputException.h */,
+				3D669D6F1184A9C900573C86 /* UnexpectedUserInputException.m */,
+				776C4C7F1183C321005C93F3 /* MemoryAccessException.h */,
+				776C4C801183C321005C93F3 /* MemoryAccessException.m */,
+				776C4C811183C321005C93F3 /* StackAccessException.h */,
+				776C4C821183C321005C93F3 /* StackAccessException.m */,
+				776C4C831183C321005C93F3 /* StackEmptyException.h */,
+				776C4C841183C321005C93F3 /* StackEmptyException.m */,
+				776C4C851183C321005C93F3 /* StackFullException.h */,
+				776C4C861183C321005C93F3 /* StackFullException.m */,
+				2A2902611173FAA000D03046 /* CrunchTimeInnerException.h */,
+				2A2902621173FAA000D03046 /* CrunchTimeInnerException.m */,
+				2A2902631173FAA000D03046 /* CrunchTimeUserException.h */,
+				2A2902641173FAA000D03046 /* CrunchTimeUserException.m */,
+				2A352214114EAF2D001382B8 /* CrunchTimeException.h */,
+				2A352215114EAF2D001382B8 /* CrunchTimeException.m */,
+				2A29027F1173FB7300D03046 /* InsufficientNumberOfOperandsException.h */,
+				2A2902801173FB7300D03046 /* InsufficientNumberOfOperandsException.m */,
+				2A5C9026117C947A0076C392 /* DivideByZeroException.h */,
+				2A5C9027117C947A0076C392 /* DivideByZeroException.m */,
+				2A5C904C117C97A60076C392 /* NegativeOperandForLogException.h */,
+				2A5C904D117C97A60076C392 /* NegativeOperandForLogException.m */,
+				2A5C9087117C9DE50076C392 /* NegativeOperandForRadicalException.h */,
+				2A5C9088117C9DE50076C392 /* NegativeOperandForRadicalException.m */,
+			);
+			name = Exceptions;
+			sourceTree = "<group>";
+		};
+		2A352213114EAF15001382B8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2A2902821173FB7700D03046 /* Exceptions */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		3D6AAB4B1148766000F56994 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				2A352219114EB307001382B8 /* StackManager.h */,
+				2A35221A114EB307001382B8 /* StackManager.m */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		3D6AAB4E1148766900F56994 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				2A352210114EAF08001382B8 /* ComputationEngine.h */,
+				2A352211114EAF08001382B8 /* ComputationEngine.m */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		3DF6692D114EB4A70062692F /* InputResponse */ = {
+			isa = PBXGroup;
+			children = (
+				3DF6692F114EB5280062692F /* InputProcessor.h */,
+				3DF66930114EB5280062692F /* InputProcessor.m */,
+			);
+			name = InputResponse;
+			sourceTree = "<group>";
+		};
+		77039BF61176978200F72EEA /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				77039BFB117697A600F72EEA /* MemoryManager.h */,
+				77039BFC117697A600F72EEA /* MemoryManager.m */,
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
+		77039BF71176978900F72EEA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				77039BF81176979B00F72EEA /* ConfigurationManager.h */,
+				77039BF91176979B00F72EEA /* ConfigurationManager.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		77039BFE117697AE00F72EEA /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				77039C0B117697C900F72EEA /* CrunchTimeNumber.h */,
+				77039C0C117697C900F72EEA /* CrunchTimeNumber.m */,
+			);
+			name = Number;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* CrunchTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CrunchTime" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrunchTime;
+			productName = CrunchTime;
+			productReference = 1D6058910D05DD3D006BFB54 /* CrunchTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CrunchTime" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* CrunchTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				B7A022871153E01B00D21AA8 /* CalculatorView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* CrunchTimeAppDelegate.m in Sources */,
+				3D6AAB531148774D00F56994 /* MainView.m in Sources */,
+				2A352212114EAF08001382B8 /* ComputationEngine.m in Sources */,
+				2A352216114EAF2D001382B8 /* CrunchTimeException.m in Sources */,
+				2A35221B114EB307001382B8 /* StackManager.m in Sources */,
+				3DF66931114EB5280062692F /* InputProcessor.m in Sources */,
+				B7A022861153E01B00D21AA8 /* CalculatorView.m in Sources */,
+				2AF8B196115C3F600075EF3E /* Constants.m in Sources */,
+				2A2902651173FAA000D03046 /* CrunchTimeInnerException.m in Sources */,
+				2A2902661173FAA000D03046 /* CrunchTimeUserException.m in Sources */,
+				2A2902811173FB7300D03046 /* InsufficientNumberOfOperandsException.m in Sources */,
+				77039BFA1176979B00F72EEA /* ConfigurationManager.m in Sources */,
+				77039BFD117697A600F72EEA /* MemoryManager.m in Sources */,
+				77039C0D117697C900F72EEA /* CrunchTimeNumber.m in Sources */,
+				2A5C9028117C947A0076C392 /* DivideByZeroException.m in Sources */,
+				2A5C904E117C97A60076C392 /* NegativeOperandForLogException.m in Sources */,
+				2A5C9089117C9DE50076C392 /* NegativeOperandForRadicalException.m in Sources */,
+				776C4C871183C321005C93F3 /* MemoryAccessException.m in Sources */,
+				776C4C881183C321005C93F3 /* StackAccessException.m in Sources */,
+				776C4C891183C321005C93F3 /* StackEmptyException.m in Sources */,
+				776C4C8A1183C321005C93F3 /* StackFullException.m in Sources */,
+				3D669D701184A9C900573C86 /* UnexpectedUserInputException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CrunchTime_Prefix.pch;
+				INFOPLIST_FILE = "CrunchTime-Info.plist";
+				PRODUCT_NAME = CrunchTime;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CrunchTime_Prefix.pch;
+				INFOPLIST_FILE = "CrunchTime-Info.plist";
+				PRODUCT_NAME = CrunchTime;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CrunchTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CrunchTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
